@@ -6,14 +6,14 @@ export default function App() {
   const [title, setTitle] = useState("Click on the Goat");
   const [selectedPlayer, setSelectedPlayer] = useState("");
 
-  {
+  function showResult(message, player) {
     setTitle(message);
     setSelectedPlayer(player);
 
     setTimeout(() => {
       setTitle("Click on the Goat");
       setSelectedPlayer("");
-    }, 1000);
+    }, 2000);
   }
 
   return (
